@@ -716,96 +716,117 @@
         </section>
     </div>
 
-    <div id="certModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal()">&times;</span>
-            <h2>Certificaciones & Formación Continua</h2>
-            
-            <p style="color: #00cc00; margin-bottom: 20px;">
-                📚 Selecciona una certificación para ver el documento completo
-            </p>
+    <!-- REEMPLAZA LA SECCIÓN DEL MODAL COMPLETA EN TU INDEX.HTML -->
+<div id="certModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <h2>Certificaciones & Formación Continua</h2>
+        
+        <p style="color: #00cc00; margin-bottom: 20px;">
+            📚 Selecciona una certificación para ver el documento completo
+        </p>
 
-            <div class="cert-tabs">
-                <button class="cert-tab active" onclick="showCert('portswigger')">PortSwigger Academy</button>
-                <button class="cert-tab" onclick="showCert('payloads')">Análisis de Payloads</button>
-                <button class="cert-tab" onclick="showCert('owasp')">OWASP Top 10</button>
-                <button class="cert-tab" onclick="showCert('infraestructura')">Infraestructura</button>
-            </div>
-
-            <div id="cert-content">
-                <!-- Certificación PortSwigger -->
-                <div id="cert-portswigger" class="cert-section">
-                    <div class="cert-item">
-                        <h3>🎯 PortSwigger Academy - Web Security</h3>
-                        <p>Laboratorios prácticos de seguridad web (SQL Injection, XSS, CSRF, XXE, SSRF, etc.)</p>
-                        <p>Repositorio: <a href="https://github.com/Sr0mars?tab=repositories" target="_blank" style="color: #00ff00;">github.com/Sr0mars</a></p>
-                        
-                        <!-- Visor de PDF -->
-                        <div style="margin-top: 15px;">
-                            <iframe class="pdf-viewer" src="./certificaciones/portswigger_academy.pdf" type="application/pdf">
-                                <p>Tu navegador no soporta visualización de PDFs. 
-                                <a href="./certificaciones/portswigger_academy.pdf" download class="download-btn">Descargar PDF</a></p>
-                            </iframe>
-                            <a href="./certificaciones/portswigger_academy.pdf" download class="download-btn">📥 Descargar Certificación</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Análisis de Payloads -->
-                <div id="cert-payloads" class="cert-section" style="display: none;">
-                    <div class="cert-item">
-                        <h3>💉 Análisis y Documentación de Payloads</h3>
-                        <p>Investigación y explicación técnica de payloads de explotación</p>
-                        <p>Disponible en GitHub con documentación detallada</p>
-                        
-                        <div style="margin-top: 15px;">
-                            <iframe class="pdf-viewer" src="./certificaciones/analisis_payloads.pdf" type="application/pdf">
-                                <p>Tu navegador no soporta visualización de PDFs. 
-                                <a href="./certificaciones/analisis_payloads.pdf" download class="download-btn">Descargar PDF</a></p>
-                            </iframe>
-                            <a href="./certificaciones/analisis_payloads.pdf" download class="download-btn">📥 Descargar Certificación</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- OWASP Top 10 -->
-                <div id="cert-owasp" class="cert-section" style="display: none;">
-                    <div class="cert-item">
-                        <h3>🔧 OWASP Top 10 - Pentesting Práctico</h3>
-                        <p>Experiencia práctica en las 10 vulnerabilidades más críticas de aplicaciones web</p>
-                        
-                        <div style="margin-top: 15px;">
-                            <iframe class="pdf-viewer" src="./certificaciones/owasp_top10.pdf" type="application/pdf">
-                                <p>Tu navegador no soporta visualización de PDFs. 
-                                <a href="./certificaciones/owasp_top10.pdf" download class="download-btn">Descargar PDF</a></p>
-                            </iframe>
-                            <a href="./certificaciones/owasp_top10.pdf" download class="download-btn">📥 Descargar Certificación</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Infraestructura -->
-                <div id="cert-infraestructura" class="cert-section" style="display: none;">
-                    <div class="cert-item">
-                        <h3>🌐 Configuración de Infraestructura Segura</h3>
-                        <p>Experiencia en servidores, VPN, redes Cisco y protocolos de seguridad</p>
-                        
-                        <div style="margin-top: 15px;">
-                            <iframe class="pdf-viewer" src="./certificaciones/infraestructura_segura.pdf" type="application/pdf">
-                                <p>Tu navegador no soporta visualización de PDFs. 
-                                <a href="./certificaciones/infraestructura_segura.pdf" download class="download-btn">Descargar PDF</a></p>
-                            </iframe>
-                            <a href="./certificaciones/infraestructura_segura.pdf" download class="download-btn">📥 Descargar Certificación</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <p style="margin-top: 30px; color: #00cc00; text-align: center;">
-                💡 Visita mi GitHub para ver proyectos y writeups detallados
-            </p>
+        <div class="cert-tabs">
+            <button class="cert-tab active" onclick="showCert('portswigger')">PortSwigger Academy</button>
+            <button class="cert-tab" onclick="showCert('payloads')">Curso Pentesting</button>
+            <button class="cert-tab" onclick="showCert('owasp')">Cybersecurity Essentials</button>
+            <button class="cert-tab" onclick="showCert('infraestructura')">Redes & Infraestructura</button>
+            <button class="cert-tab" onclick="showCert('linux')">Linux</button>
         </div>
+
+        <div id="cert-content">
+            <!-- Certificación PortSwigger -->
+            <div id="cert-portswigger" class="cert-section">
+                <div class="cert-item">
+                    <h3>🎯 PortSwigger Academy - Web Security</h3>
+                    <p>Laboratorios prácticos de seguridad web (SQL Injection, XSS, CSRF, XXE, SSRF, etc.)</p>
+                    <p>Repositorio: <a href="https://github.com/Sr0mars?tab=repositories" target="_blank" style="color: #00ff00;">github.com/Sr0mars</a></p>
+                    
+                    <!-- Visor de PDF -->
+                    <div style="margin-top: 15px;">
+                        <iframe class="pdf-viewer" src="./certificaciones/PortSwigger.pdf#toolbar=1" type="application/pdf">
+                            <p>Tu navegador no soporta visualización de PDFs. 
+                            <a href="./certificaciones/PortSwigger.pdf" download class="download-btn">Descargar PDF</a></p>
+                        </iframe>
+                        <a href="./certificaciones/PortSwigger.pdf" download class="download-btn">📥 Descargar Certificación</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso Pentesting -->
+            <div id="cert-payloads" class="cert-section" style="display: none;">
+                <div class="cert-item">
+                    <h3>💉 Curso de Pentesting Profesional</h3>
+                    <p>Formación completa en pruebas de penetración y análisis de vulnerabilidades</p>
+                    <p>Técnicas avanzadas de explotación y documentación de payloads</p>
+                    
+                    <div style="margin-top: 15px;">
+                        <iframe class="pdf-viewer" src="./certificaciones/Curso Pentesting.pdf#toolbar=1" type="application/pdf">
+                            <p>Tu navegador no soporta visualización de PDFs. 
+                            <a href="./certificaciones/Curso Pentesting.pdf" download class="download-btn">Descargar PDF</a></p>
+                        </iframe>
+                        <a href="./certificaciones/Curso Pentesting.pdf" download class="download-btn">📥 Descargar Certificación</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cybersecurity Essentials -->
+            <div id="cert-owasp" class="cert-section" style="display: none;">
+                <div class="cert-item">
+                    <h3>🔐 Cybersecurity Essentials</h3>
+                    <p>Fundamentos de ciberseguridad, OWASP Top 10 y mejores prácticas</p>
+                    <p>Formación en seguridad defensiva y ofensiva</p>
+                    
+                    <div style="margin-top: 15px;">
+                        <iframe class="pdf-viewer" src="./certificaciones/Cybersecurity Essentials.pdf#toolbar=1" type="application/pdf">
+                            <p>Tu navegador no soporta visualización de PDFs. 
+                            <a href="./certificaciones/Cybersecurity Essentials.pdf" download class="download-btn">Descargar PDF</a></p>
+                        </iframe>
+                        <a href="./certificaciones/Cybersecurity Essentials.pdf" download class="download-btn">📥 Descargar Certificación</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CCNAv7 - Infraestructura -->
+            <div id="cert-infraestructura" class="cert-section" style="display: none;">
+                <div class="cert-item">
+                    <h3>🌐 CCNAv7 - Switching, Routing, and Wireless Essentials</h3>
+                    <p>Configuración de infraestructura de red segura</p>
+                    <p>Protocolos de routing (OSPF, RIP), VPN, DHCP, Frame Relay</p>
+                    
+                    <div style="margin-top: 15px;">
+                        <iframe class="pdf-viewer" src="./certificaciones/CCNAv7 Switching, Routing, and Wireless Essentials.pdf#toolbar=1" type="application/pdf">
+                            <p>Tu navegador no soporta visualización de PDFs. 
+                            <a href="./certificaciones/CCNAv7 Switching, Routing, and Wireless Essentials.pdf" download class="download-btn">Descargar PDF</a></p>
+                        </iframe>
+                        <a href="./certificaciones/CCNAv7 Switching, Routing, and Wireless Essentials.pdf" download class="download-btn">📥 Descargar Certificación</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linux -->
+            <div id="cert-linux" class="cert-section" style="display: none;">
+                <div class="cert-item">
+                    <h3>🐧 Linux - Administración y Seguridad</h3>
+                    <p>Administración de sistemas Linux/Unix</p>
+                    <p>Configuración de servidores seguros y hardening</p>
+                    
+                    <div style="margin-top: 15px;">
+                        <iframe class="pdf-viewer" src="./certificaciones/Linux.pdf#toolbar=1" type="application/pdf">
+                            <p>Tu navegador no soporta visualización de PDFs. 
+                            <a href="./certificaciones/Linux.pdf" download class="download-btn">Descargar PDF</a></p>
+                        </iframe>
+                        <a href="./certificaciones/Linux.pdf" download class="download-btn">📥 Descargar Certificación</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p style="margin-top: 30px; color: #00cc00; text-align: center;">
+            💡 Visita mi GitHub para ver proyectos y writeups detallados
+        </p>
     </div>
+</div>
 
     <script>
         // Scroll to top on page load
